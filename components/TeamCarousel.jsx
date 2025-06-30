@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Mark Jecno",
     role: "Developer & Designer",
     skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
-    image: "./team1.jpg",
+    image: "/Team1.jpg",
     bio: "It is a long established fact that a reader will be distracted by the readable content...",
     socials: {
       facebook: "#",
@@ -26,7 +26,7 @@ const teamMembers = [
     name: "Mark Jecno",
     role: "Developer & Designer",
     skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
-    image: "./team2.jpg",
+    image: "/Team2.jpg",
     bio: "It is a long established fact that a reader will be distracted by the readable content...",
     socials: {
       facebook: "#",
@@ -41,7 +41,7 @@ const teamMembers = [
     name: "Mark Jecno",
     role: "Developer & Designer",
     skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
-    image: "./team3.jpg",
+    image: "/Team3.jpg",
     bio: "It is a long established fact that a reader will be distracted by the readable content...",
     socials: {
       facebook: "#",
@@ -56,7 +56,7 @@ const teamMembers = [
     name: "Mark Jecno",
     role: "Developer & Designer",
     skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
-    image: "./team2.jpg",
+    image: "/Team2.jpg",
     bio: "It is a long established fact that a reader will be distracted by the readable content...",
     socials: {
       facebook: "#",
@@ -71,7 +71,7 @@ const teamMembers = [
     name: "Mark Jecno",
     role: "Developer & Designer",
     skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
-    image: "./team1.jpg",
+    image: "/Team1.jpg",
     bio: "It is a long established fact that a reader will be distracted by the readable content...",
     socials: {
       facebook: "#",
