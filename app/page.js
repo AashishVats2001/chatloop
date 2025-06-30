@@ -1,103 +1,154 @@
+import AboutOptions from "@/components/AboutOptions";
+import DownloadButtons from "@/components/DownloadButtons";
+import HowItWorksCards from "@/components/HowItWorksCards";
+import Mobile from "@/components/Mobile";
+import TeamCarousel from "@/components/TeamCarousel";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <section id="home" className="w-full flex justify-center bg-gradient-to-r from-primary to-secondary pt-20 h-dvh">
+        <div className="max-w-6xl w-full flex flex-col md:flex-row justify-between items-center gap-2 px-2">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="max-w-3/5 gap-4 flex flex-col items-center md:items-start">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-thin text-balance leading-16 text-slight-fade">
+              The best way to connect with your friends is with <br></br><span className="font-semibold text-text-primary">ChatLoop!</span>
+            </h1>
+            <p className="text-sm md:text-base lg:text-lg text-balance text-text-faded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium ullam voluptatibus</p>
+            <div className="mt-20">
+              <DownloadButtons />
+            </div>
+          </div>
+          <Mobile />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+
+      {/* About */}
+      <section id="about" className="w-full max-w-6xl pt-20 flex flex-col gap-16 items-center justify-center overflow-y-clip">
+        <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">About Chat Loop
+          {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
+        </h3>
+
+        {/* Options */}
+        <AboutOptions />
+
+        <h4 className="text-text-gray font-semibold text-xl md:text-2xl lg:text-3xl">Connect with People all over the world , with your small device</h4>
+
+        <Image src='/about-banner.png' width={1481} height={606} alt="Mobile banner" className="scale-125" />
+      </section>
+
+
+      {/* Features */}
+      <section id="features" className="w-full py-20 flex items-center justify-center bg-gradient-to-r from-primary to-secondary overflow-y-clip">
+        <div className="w-full max-w-6xl flex flex-col gap-16 items-center justify-center text-text-primary">
+
+          <h3 className="section-title text-2xl md:text-3xl lg:text-4xl font-semibold">Chat Loop Features
+            {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
+          </h3>
+
+          {/* <Image src='/about-banner.png' width={1481} height={606} alt="Mobile banner" className="" /> */}
+          <div className="flex w-full justify-center">
+            <ul className="flex flex-col text-end items-end justify-evenly gap-6 border-r-[1px] border-text-faded px-5">
+              <li className="flex items-start feature-link-left">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li>
+              <li className="flex items-start feature-link-left">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li><li className="flex items-start feature-link-left">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li><li className="flex items-start feature-link-left">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li>
+            </ul>
+
+            <Image src='/feature-mob.png' width={356} height={606} alt="Mobile Features" className="hidden md:block" />
+
+            <ul className="flex flex-col text-start items-start justify-evenly gap-6 border-l-[1px] border-text-faded px-5">
+              <li className="flex items-start feature-link-right">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li>
+              <li className="flex items-start feature-link-right">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li><li className="flex items-start feature-link-right">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li><li className="flex items-start feature-link-right">
+                <div className="flex flex-col gap-2">
+
+                  <h4 className="text-xl font-medium">Easy Installation</h4>
+                  <p>Lorem ipsum dolor sit amet  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* How it works */}
+      <section id="howitworks" className="w-full max-w-6xl py-20 flex flex-col gap-16 items-center justify-center">
+        <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">
+          How Chat Loop Works
+          {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
+        </h3>
+        <p className="text-text-gray text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! ipsum dolor sit Rem autem voluptatem obcaecati</p>
+        <HowItWorksCards />
+
+      </section>
+
+
+      {/* Screenshot Carousel */}
+      <section id="screenshot" className="w-full py-20 flex items-center justify-center bg-gradient-to-r from-primary to-secondary overflow-y-clip">
+        <div className="w-full max-w-6xl flex flex-col gap-16 items-center justify-center text-text-primary">
+          <h3 className="section-title text-2xl md:text-3xl lg:text-4xl font-semibold">Chat Loop Screenshots
+            {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
+          </h3>
+
+
+        </div>
+      </section>
+
+      {/* Our Work Place */}
+      <section id="workplace" className="w-full max-w-6xl py-20 flex flex-col gap-16 items-center justify-center">
+        <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">
+          Our Work Place
+          {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
+        </h3>
+        <TeamCarousel />
+
+      </section>
+
+
+    </>
   );
 }
