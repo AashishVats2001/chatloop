@@ -4,8 +4,8 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --primary: #5f57ea;
-  --secondary: #9647db;
+  --primary: #3C82F6;
+  --secondary: #6C5CE7;
   --text-primary: #ffffff;
   --dark: #212529;
   --text-gray: #586082;
@@ -27,6 +27,8 @@
   --color-text-faded: var(--faded);
   --color-text-blue: var(--blue);
   --color-border-light: var(--border-light);
+  --color-dark: var(--dark);
+
 }
 
 body {

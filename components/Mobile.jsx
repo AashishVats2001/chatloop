@@ -15,10 +15,10 @@ const Mobile = () => {
         <div className="relative">
           <Image
             src="/top1.png"
-            width={228}
-            height={228}
+            width={155}
+            height={155}
             alt="User Female"
-            className="z-20"
+            className="z-20 rounded-full"
           />
         </div>
       </div>
@@ -40,10 +40,10 @@ const Mobile = () => {
       </div>
       <Image
         src="/top4.png"
-        width={228}
-        height={228}
+        width={155}
+        height={155}
         alt="User Male"
-        className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/3"
+        className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/3 rounded-full"
       />
       <Image
         src="/top5.png"

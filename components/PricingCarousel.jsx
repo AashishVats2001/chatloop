@@ -9,47 +9,47 @@ import "swiper/css/pagination";
 
 const pricingPlans = [
   {
-    name: "Premium",
-    price: 59,
-    duration: "Year",
+    name: "Free",
+    price: 0,
+    duration: "Month",
     features: [
-      "real time sync",
-      "unlimited attachment",
-      "customize theme",
-      "priority email support",
-    ],
-  },
-  {
-    name: "Professional",
-    price: 69,
-    duration: "Year",
-    features: [
-      "24/7 On-site Support",
-      "real time sync",
-      "customize theme",
-      "priority email support",
+      "Up to 5 users",
+      "1 virtual room",
+      "Basic avatar access",
+      "Standard video quality",
     ],
   },
   {
     name: "Standard",
-    price: 79,
-    duration: "Year",
-    features: [
-      "24/7 On-site Support",
-      "unlimited attachment",
-      "customize theme",
-      "priority email support",
-    ],
-  },
-  {
-    name: "Extreme",
     price: 49,
     duration: "Year",
     features: [
-      "24/7 On-site Support",
-      "real time sync",
-      "customize theme",
-      "priority email support",
+      "Up to 25 users",
+      "Customizable rooms",
+      "HD video support",
+      "Screen sharing",
+    ],
+  },
+  {
+    name: "Pro",
+    price: 79,
+    duration: "Year",
+    features: [
+      "Up to 100 users",
+      "Full avatar customization",
+      "Event scheduling tools",
+      "Priority email support",
+    ],
+  },
+  {
+    name: "Enterprise",
+    price: 129,
+    duration: "Year",
+    features: [
+      "Unlimited users & rooms",
+      "Advanced analytics",
+      "White-label branding",
+      "Dedicated account manager",
     ],
   },
 ];

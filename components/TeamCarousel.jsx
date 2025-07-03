@@ -8,11 +8,11 @@ import { motion } from "motion/react";
 const teamMembers = [
   {
     id: 1,
-    name: "Mark Jecno",
-    role: "Developer & Designer",
-    skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
+    name: "Ava Mitchell",
+    role: "Lead Product Designer",
+    skills: ["Figma", "UI/UX", "Illustrator", "CSS", "Prototyping"],
     image: "/Team1.jpg",
-    bio: "It is a long established fact that a reader will be distracted by the readable content...",
+    bio: "Ava leads the design vision at VerseSquare, crafting immersive and intuitive virtual spaces that users love to explore. Her focus is on user-centered design and accessibility.",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -20,14 +20,13 @@ const teamMembers = [
       google: "#",
     },
   },
-
   {
     id: 2,
-    name: "Mark Jecno",
-    role: "Developer & Designer",
-    skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
+    name: "Liam Chen",
+    role: "Full Stack Developer",
+    skills: ["React", "Node.js", "TypeScript", "MongoDB", "WebRTC"],
     image: "/Team2.jpg",
-    bio: "It is a long established fact that a reader will be distracted by the readable content...",
+    bio: "Liam architects the core of VerseSquare’s real-time engine and ensures seamless cross-device performance. He specializes in scalable infrastructure and smooth interactions.",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -35,14 +34,13 @@ const teamMembers = [
       google: "#",
     },
   },
-
   {
     id: 3,
-    name: "Mark Jecno",
-    role: "Developer & Designer",
-    skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
+    name: "Nina Patel",
+    role: "Community & Growth Manager",
+    skills: ["Marketing", "Community Building", "SEO", "Content", "CRM"],
     image: "/Team3.jpg",
-    bio: "It is a long established fact that a reader will be distracted by the readable content...",
+    bio: "Nina helps creators, educators, and teams find success on VerseSquare. She’s passionate about building authentic communities and driving meaningful engagement.",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -50,14 +48,13 @@ const teamMembers = [
       google: "#",
     },
   },
-
   {
     id: 4,
-    name: "Mark Jecno",
-    role: "Developer & Designer",
-    skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
+    name: "Carlos Rivera",
+    role: "3D Space Engineer",
+    skills: ["Three.js", "Blender", "Unity", "VR", "3D Animation"],
     image: "/Team2.jpg",
-    bio: "It is a long established fact that a reader will be distracted by the readable content...",
+    bio: "Carlos brings our virtual spaces to life with stunning visuals and interactive elements. He specializes in spatial design and immersive environments.",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -65,14 +62,13 @@ const teamMembers = [
       google: "#",
     },
   },
-
   {
     id: 5,
-    name: "Mark Jecno",
-    role: "Developer & Designer",
-    skills: ["PHP", "Laravel", "Cake", "WordPress", "HTML5"],
+    name: "Sophia Lee",
+    role: "Frontend Developer",
+    skills: ["Next.js", "Tailwind", "React", "GraphQL", "Framer Motion"],
     image: "/Team1.jpg",
-    bio: "It is a long established fact that a reader will be distracted by the readable content...",
+    bio: "Sophia turns ideas into interactive realities. She focuses on building beautiful, fast, and accessible interfaces that elevate the VerseSquare experience.",
     socials: {
       facebook: "#",
       twitter: "#",
