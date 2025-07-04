@@ -2,14 +2,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #FFFFFF;
+  --background: #ffffff;
   --foreground: #000000;
-  --primary: #5f57ea;
-  --secondary: #9647db;
+  --primary: #3C82F6;
+  --secondary: #6C5CE7;
   --text-primary: #ffffff;
   --dark: #212529;
   --text-gray: #586082;
-  --slight-fade: #FFFFD9;
+  --slight-fade: #ffffd9;
   --faded: #cbc8f8;
   --blue: #0d6efd;
   --border-light: #dddddd;
@@ -27,8 +27,9 @@
   --color-text-faded: var(--faded);
   --color-text-blue: var(--blue);
   --color-border-light: var(--border-light);
-}
+  --color-dark: var(--dark);
 
+}
 
 body {
   background: var(--background);
@@ -37,7 +38,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-
 }
 
 .feature-link-left::after {
@@ -57,8 +57,7 @@ html {
 }
 
 @media (width >=48rem
-  /* 768px */
-) {
+ /* 768px */) {
   .feature-link-right::before {
     content: "";
     background: #9647db;
@@ -76,7 +75,6 @@ html {
   }
 }
 
-
 .hide-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -88,3 +86,22 @@ html {
   display: none;
   /* Chrome, Safari, Opera */
 }
+
+/* .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+

@@ -1,31 +1,34 @@
 "use client";
 
 import React from "react";
-import { Download, PhoneCall, Wifi } from "lucide-react";
+import { Home, Users, Settings, Monitor } from "lucide-react";
 
 const features = [
   {
-    title: "Download App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio",
-    icon: Download,
+    title: "Create Your Own Space",
+    description: "Design a virtual room that fits your vibe.",
+    icon: Home,
   },
   {
-    title: "Connect People",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio",
-    icon: PhoneCall,
+    title: "Invite and Meet Instantly",
+    description: "Share a link and start talking in seconds.",
+    icon: Users,
   },
   {
-    title: "Enjoy App",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio",
-    icon: Wifi,
+    title: "Cross-Device Compatibility",
+    description: "Join from mobile, tablet, or desktop easily.",
+    icon: Monitor,
+  },
+  {
+    title: "Customize Everything",
+    description: "Personalize avatars, layout, and environment.",
+    icon: Settings,
   },
 ];
+
 const HowItWorksCards = () => {
   return (
-    <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 px-6 py-12 max-w-7xl mx-auto">
+    <section className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-6 py-12 max-w-7xl mx-auto">
       {features.map((feature, idx) => {
         const Icon = feature.icon;
         return (
@@ -50,7 +53,7 @@ const HowItWorksCards = () => {
             <h3 className="font-bold text-lg md:text-xl lg:text-2xl text-text-gray z-10 relative">
               {feature.title}
             </h3>
-            <p className="text-sm text-text-gray mt-2 z-10 relative">
+            <p className="text-sm text-text-gray mt-2 z-10 relative font-medium">
               {feature.description}
             </p>
           </div>

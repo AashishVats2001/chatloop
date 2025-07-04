@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ExpandedMember({ member, onClose }) {
   return (
-    <div className="bg-white border rounded-lg h-full w-full flex flex-col md:flex-row items-center px-6 gap-6 relative">
+    <div className="bg-white border-[1px] border-primary rounded-lg h-full w-full flex flex-col md:flex-row items-center text-center md:text-start px-6 gap-6 relative">
       <Image
         src={member.image}
         alt={member.name}
@@ -21,7 +21,7 @@ export default function ExpandedMember({ member, onClose }) {
 
       <button
         onClick={onClose}
-        className="absolute top-3 right-3 bg-primary text-white rounded-full p-1"
+        className="absolute top-3 right-3 bg-primary text-white rounded-full p-1 cursor-pointer hover:opacity-90 hover:scale-105 transition-all"
       >
         <X size={18} />
       </button>
