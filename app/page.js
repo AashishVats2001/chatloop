@@ -168,7 +168,7 @@ export default function Home() {
         </h3>
         <p className="text-text-gray text-sm md:text-base lg:text-lg text-balance text-center font-medium">
           Getting started is simple. Choose a space design, send a link, and
-          you're ready to go. VerseSquare removes the friction from virtual
+          you&apos;re ready to go. VerseSquare removes the friction from virtual
           meetups. No downloads, no confusion, just real-time connection in
           beautifully designed environments
         </p>
