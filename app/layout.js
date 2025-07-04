@@ -6,7 +6,7 @@ import '@/lib/fontawesome'; // adjust path if needed
 
 export const metadata = {
   title: "VerseSquare",
-  description: " Connect. Collaborate. Create",
+  description: " Connect. Collaborate. Create.",
 };
 
 export default function RootLayout({ children }) {
