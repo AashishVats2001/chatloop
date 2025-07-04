@@ -28,20 +28,20 @@ export default function Home() {
         id="home"
         className="w-full flex justify-center bg-gradient-to-r from-primary to-secondary pt-20 h-dvh"
       >
-        <div className="max-w-6xl w-full flex flex-col md:flex-row justify-between items-center gap-2 px-2">
-          <div className="max-w-3/5 gap-4 flex flex-col items-center md:items-start">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-thin text-balance leading-16 text-slight-fade">
+        <div className="max-w-6xl  w-full flex flex-col md:flex-row justify-evenly md:justify-between items-center gap-0 px-6">
+          <div className="w-full md:w-3/5 gap-4 flex flex-col text-center md:text-start items-center md:items-start">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-thin text-balance md:leading-16 text-slight-fade">
               Connect. Collaborate. Create <br></br> All in One Virtual Space
               with <br></br>
               <span className="font-semibold text-text-primary">
                 VerseSquare!
               </span>
             </h1>
-            <p className="text-sm md:text-base lg:text-lg text-balance text-text-faded">
+            <p className="text-base md:text-lg lg:text-xl text-balance text-text-faded">
               VerseSquare lets you host immersive virtual hangouts, events, and
               meetups with just a few clicks.
             </p>
-            <div className="mt-20">
+            <div className="md:mt-20">
               <DownloadButtons />
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Home() {
       {/* About */}
       <section
         id="about"
-        className="w-full max-w-6xl pt-20 flex flex-col gap-16 items-center justify-center overflow-y-clip"
+        className="w-full max-w-6xl pt-20 px-6 md:px-0 flex flex-col gap-16 text-center items-center justify-center overflow-clip"
       >
         <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">
           About VerseSquare
@@ -71,7 +71,7 @@ export default function Home() {
           width={1481}
           height={606}
           alt="Mobile banner"
-          className="-mb-60"
+          className="-mb-60 min-w-[600px]"
         />
       </section>
 
@@ -91,28 +91,28 @@ export default function Home() {
             <ul className="flex flex-col text-end items-end justify-evenly gap-6 border-r-[1px] border-text-faded px-5">
               <li className="flex items-start feature-link-left">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Custom Virtual Spaces</h4>
-                  <p>Build and design unique environments</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Custom Virtual Spaces</h4>
+                  <p className="text-xs md:text-sm lg:text-base">Build and design unique environments</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-left">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">
+                  <h4 className="md:text-lg lg:text-xl font-medium">
                     Real-Time Video & Voice
                   </h4>
-                  <p>Talk and see each other instantly</p>
+                  <p className="text-xs md:text-sm lg:text-base">Talk and see each other instantly</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-left">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Spatial Audio</h4>
-                  <p>Hear sound based on user location</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Spatial Audio</h4>
+                  <p className="text-xs md:text-sm lg:text-base">Hear sound based on user location</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-left">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Screen Sharing</h4>
-                  <p> Share your screen with anyone</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Screen Sharing</h4>
+                  <p className="text-xs md:text-sm lg:text-base"> Share your screen with anyone</p>
                 </div>
               </li>
             </ul>
@@ -128,28 +128,28 @@ export default function Home() {
             <ul className="flex flex-col text-start items-start justify-evenly gap-6 border-l-[1px] border-text-faded px-5">
               <li className="flex items-start feature-link-right">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">
+                  <h4 className="md:text-lg lg:text-xl font-medium">
                     Avatar Personalization
                   </h4>
-                  <p>Create avatars that reflect you</p>
+                  <p className="text-xs md:text-sm lg:text-base">Create avatars that reflect you</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-right">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Event Scheduling</h4>
-                  <p>Plan meetups with calendar integration</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Event Scheduling</h4>
+                  <p className="text-xs md:text-sm lg:text-base">Plan meetups with calendar integration</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-right">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Cross-Device Support</h4>
-                  <p>Works on phone, tablet, and desktop</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Cross-Device Support</h4>
+                  <p className="text-xs md:text-sm lg:text-base">Works on phone, tablet, and desktop</p>
                 </div>
               </li>
               <li className="flex items-start feature-link-right">
                 <div className="flex flex-col gap-2">
-                  <h4 className="text-xl font-medium">Privacy Controls</h4>
-                  <p>Control access and room visibility</p>
+                  <h4 className="md:text-lg lg:text-xl font-medium">Privacy Controls</h4>
+                  <p className="text-xs md:text-sm lg:text-base">Control access and room visibility</p>
                 </div>
               </li>
             </ul>
@@ -160,7 +160,7 @@ export default function Home() {
       {/* How it works */}
       <section
         id="howitworks"
-        className="w-full max-w-6xl py-20 flex flex-col gap-16 items-center justify-center"
+        className="w-full max-w-6xl py-20 px-6 md:px-0 flex flex-col gap-16 items-center justify-center"
       >
         <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">
           How It Works
@@ -191,7 +191,7 @@ export default function Home() {
 
       {/* Our Work Place */}
       <section
-        id="workplace"
+        id="team"
         className="w-full max-w-6xl py-20 flex flex-col gap-16 items-center justify-center"
       >
         <h3 className="section-title text-2xl md:text-3xl lg:text-4xl text-primary font-semibold">
@@ -241,11 +241,11 @@ export default function Home() {
       {/* Contact Info */}
       <section
         id="contact"
-        className="w-full py-20 flex flex-col items-center justify-center gap-10 bg-gradient-to-r from-primary to-secondary overflow-y-clip"
+        className="w-full py-20 px-6 md:px-0 flex flex-col items-center justify-center gap-10 bg-gradient-to-r from-primary to-secondary overflow-y-clip"
       >
         <div className="w-full max-w-6xl flex flex-col gap-16 items-center justify-center text-text-primary">
           <h3 className="section-title text-2xl md:text-3xl lg:text-4xl font-semibold">
-            Contact
+            Let&apos;s Connect
             {/* <span className="px-3 py-10 text-inherit border-b-2 fill-inherit border-dotted"></span> */}
           </h3>
         </div>
@@ -309,7 +309,7 @@ export default function Home() {
 
       <footer className="w-full flex items-center justify-center bg-text-gray relative pb-20 pt-40">
         <div className="max-w-container w-full flex flex-col items-center justify-center gap-16 ">
-          <h2 className=" heading text-5xl text-white flex flex-col gap-2 items-center">
+          <h2 className=" heading text-3xl md:text-4xl lg:text-5xl text-white flex flex-col gap-2 items-center">
             Download VerseSquare
           </h2>
           <div className="flex flex-col md:flex-row justify-stretch w-3/4 md:w-full lg:w-3/4 gap-6 px-2">
@@ -393,8 +393,8 @@ export default function Home() {
           {/* Socials */}
           <SocialIcons />
           <p className="text-white text-sm">
-            © Copyright 2025. Developed by{" "}
-            <span className="text-blue-400">DA</span>
+            © Copyright 2025.
+            <span className="font-semibold"> VerseSquare</span>
           </p>
         </div>
       </footer>

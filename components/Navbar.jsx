@@ -22,8 +22,8 @@ export default function Navbar() {
       }`}
     >
       <nav
-        className={`max-w-6xl mx-auto flex items-center justify-between text-text-primary transition-all duration-300  ${
-          scrolled ? "px-6 py-3" : "px-6 py-6"
+        className={`max-w-6xl mx-auto px-6 flex items-center justify-between text-text-primary transition-all duration-300  ${
+          scrolled ? "py-3" : "py-6"
         }`}
       >
         {/* Logo */}
@@ -33,7 +33,7 @@ export default function Navbar() {
             alt="Chatloop logo"
             width={257}
             height={257}
-            className="max-w-[80px] w-full brightness-0 invert"
+            className="max-w-[80px] w-3/5 brightness-0 invert"
           />
           <span className="text-white font-bold text-xl lg:text-2xl max-md:hidden">
             VerseSquare
@@ -79,14 +79,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-main-gradient px-6 py-4 text-text-primary space-y-4 text-center">
-          <Link href="#home">HOME</Link>
-          <Link href="#about">ABOUT</Link>
-          <Link href="#features">FEATURE</Link>
-          <Link href="#pricing">PRICING</Link>
-          <Link href="#team">TEAM</Link>
-          <Link href="#faq">FAQ</Link>
-          <Link href="#contact">CONTACT US</Link>
+        <div className="flex md:hidden flex-col bg-main-gradient px-6 py-4 text-text-primary space-y-4 text-center">
+          <Link href="#home" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">HOME</Link>
+          <Link href="#about" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">ABOUT</Link>
+          <Link href="#features" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">FEATURE</Link>
+          <Link href="#pricing" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">PRICING</Link>
+          <Link href="#team" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">TEAM</Link>
+          <Link href="#faq" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">FAQ</Link>
+          <Link href="#contact" className="focus:border-b-[1px] border-[#ffffff00] focus:border-[#ffffff] transition-all">CONTACT US</Link>
         </div>
       )}
     </header>

@@ -12,7 +12,7 @@ export default function ExpandedMember({ member, onClose }) {
         className="rounded object-contain"
       />
 
-      <div>
+      <div className=" overflow-auto">
         <h2 className="text-xl font-semibold text-text-dark">{member.name}</h2>
         <p className="text-text-gray font-medium">{member.role}</p>
         <p className="text-primary text-sm mt-2">{member.skills.join(", ")}</p>
